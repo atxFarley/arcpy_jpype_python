@@ -1,0 +1,31 @@
+1) Install a 32-bit JDK
+http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+Select:
+Windows x86	191.22 MB  	jdk-8u131-windows-i586.exe
+
+
+2) Get the jpype library from GitHub
+https://github.com/originell/jpype
+Extract into Python27\ArcGIS folder
+
+3) Follow the instructions here: http://jpype.readthedocs.io/en/latest/install.html for completing required configuaration
+
+3a) Update Path enviornment variable to include paths to python.exe and JDK
+
+3b)
+may have to install pip, setuptools and wheels
+https://packaging.python.org/tutorials/installing-packages/
+
+Securely Download get-pip.py [1]
+
+Run python get-pip.py. [2] This will install or upgrade pip. Additionally, it will install setuptools and wheel if they’re not installed already.
+
+
+For the C++Compiler:
+http://aka.ms/vcpython27
+msiexec /i "VCForPython27.msi"  ALLUSERS=1
+
+4) Copy the CoreLogic Zip4 classes directory into a local directory
+
+5) Update jpypeModule.py to point to the appropriate path for JDK and classes directory
+
